@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products.component';
 
 
@@ -9,7 +10,7 @@ import { ProductsComponent } from './products.component';
     ProductsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, CommonModule, ProductsRoutingModule
   ],
   providers: [],
   bootstrap: [ProductsComponent]
